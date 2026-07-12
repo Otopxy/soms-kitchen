@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { AnnouncementCard } from './components/AnnouncementCard';
 import { CartDrawer } from './components/CartDrawer';
 import { CateringSection } from './components/CateringSection';
 import { ContactSection } from './components/ContactSection';
@@ -26,6 +27,7 @@ function App() {
       <Header business={business} itemCount={cart.itemCount} onOpenCart={() => setIsCartOpen(true)} />
       <main>
         <Hero business={business} />
+        <AnnouncementCard />
         <FeaturedMeals items={menuItems} onAddItem={cart.addItem} onOpenCart={() => setIsCartOpen(true)} />
         <MenuSection items={menuItems} onAddItem={cart.addItem} onOpenCart={() => setIsCartOpen(true)} />
         <CateringSection business={business} />

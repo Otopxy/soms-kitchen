@@ -423,6 +423,64 @@ textarea:focus-visible {
   min-width: 0;
 }
 
+.announcement {
+  padding-block: 4px 34px;
+}
+
+.announcement-card {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(247, 181, 30, 0.38);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(247, 181, 30, 0.26), transparent 36%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, #fff6d8 52%, rgba(251, 232, 232, 0.92) 100%);
+  box-shadow: 0 18px 44px rgba(94, 0, 26, 0.11);
+}
+
+.announcement-card__accent {
+  min-height: 6px;
+  background: linear-gradient(90deg, var(--brand), var(--orange), var(--gold));
+}
+
+.announcement-card__content {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+}
+
+.announcement-card__kicker {
+  width: fit-content;
+  margin: 0;
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: rgba(138, 0, 38, 0.09);
+  color: var(--brand);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.announcement-card h2 {
+  margin: 0;
+  color: var(--brand-dark);
+  font-size: clamp(1.4rem, 6vw, 2rem);
+  line-height: 1.1;
+}
+
+.announcement-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.announcement-card__signature {
+  color: var(--brand-dark) !important;
+  font-weight: 800;
+}
+
 .featured-grid,
 .menu-grid,
 .service-grid,
